@@ -67,7 +67,7 @@
       goTo((targetIndex === null ? active : targetIndex) + (event.key === 'ArrowRight' ? 1 : -1));
     }
   });
-  // O toque mantém a rolagem nativa; o mouse ganha arraste horizontal.
+  // Em dispositivos táteis mantém-se o scroll nativo; no computador é possível arrastar horizontalmente.
   carousel.addEventListener('pointerdown', function (event) {
     if (event.pointerType !== 'mouse' || event.button !== 0) return;
     event.preventDefault();
@@ -157,14 +157,14 @@
     try {
       var url = new URL(offer.link);
       if (url.protocol === 'https:' && (url.hostname === 'hotmart.com' || url.hostname.endsWith('.hotmart.com'))) checkout = url.href;
-    } catch (error) { /* A oferta aguarda seu link de pagamento. */ }
+    } catch (error) { /* A oferta aguarda um link de pagamento válido. */ }
     document.querySelectorAll('[data-checkout="' + key + '"]').forEach(function (button) {
       if (checkout) button.href = checkout;
-      // O botão do plano principal abre a oferta especial antes de seguir ao checkout.
+      // O botão do produto principal abre a oferta especial antes de seguir para o checkout.
       if (button === trigger) return;
       button.addEventListener('click', function () {
         closePopup();
-        if (!checkout) document.getElementById('checkout-status').textContent = 'As vendas desta opção serão abertas em breve. Volte para conferir a disponibilidade.';
+        if (!checkout) document.getElementById('checkout-status').textContent = 'As vendas desta opção estarão disponíveis em breve. Volte mais tarde para verificar a disponibilidade.';
       });
     });
   });
