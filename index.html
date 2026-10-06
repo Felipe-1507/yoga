@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-PT">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Yoga Night Routine | 21 noites de autocuidado</title>
-<meta name="description" content="21 noites de autocuidado com yoga suave para mulheres. Um guia ilustrado de respiração, alongamentos e relaxamento para seu ritual noturno.">
+<title>Yoga Night Routine | Yoga suave para relaxar ao fim do dia</title>
+<meta name="description" content="21 noites de yoga suave para mulheres que querem desacelerar ao fim do dia. Práticas ilustradas de respiração, alongamento e relaxamento para fazer em casa.">
 <meta name="theme-color" content="#995365">
 <!-- Meta Pixel Code -->
 <script>
@@ -28,9 +28,10 @@ fbq('track', 'PageView');
 :root{
   --bg:#FFF9F2; --card:#FFFFFF; --ink:#351027; --muted:#735963;
   --sage:#995365; --sage-d:#74384D; --terra:#98485F; --terra-d:#79364B;
-  --line:#E8CFCC; --gold:#B8733F;
+  --line:#E8CFCC; --gold:#B8733F; --soft:#F9ECE8;
 }
 *{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
 body{background:var(--bg);color:var(--ink);font-family:Inter,sans-serif;line-height:1.55;font-size:16px}
 img{max-width:100%;height:auto;display:block}
 .wrap{max-width:600px;margin:0 auto;padding:0 16px}
@@ -54,7 +55,23 @@ h2{font-size:25px;text-align:center;margin-bottom:8px}
 /* HERO */
 .hero{padding-top:32px;text-align:center}
 .hero p.lead{color:var(--muted);font-size:17px;margin-bottom:22px}
+.hero .proofline{display:flex;justify-content:center;gap:8px;flex-wrap:wrap;margin:0 0 18px}
+.hero .proofline span{background:#fff;border:1px solid var(--line);color:var(--muted);padding:6px 10px;border-radius:99px;font-size:12px;font-weight:600}
 .mockup{width:100%;margin:0 auto 24px;border-radius:12px}
+
+/* PARA QUEM É */
+.fit{background:var(--card)}
+.fit-list{display:grid;gap:10px;margin-top:20px}
+.fit-item{display:flex;gap:12px;align-items:flex-start;background:var(--soft);border:1px solid var(--line);border-radius:12px;padding:14px}
+.fit-icon{width:30px;height:30px;border-radius:50%;display:grid;place-items:center;background:#fff;color:var(--terra);font-weight:800;flex:0 0 30px}
+.fit-item p{color:var(--muted);font-size:15px}
+
+/* COMO FUNCIONA */
+.steps{display:grid;gap:12px;margin-top:22px}
+.step{display:flex;gap:14px;align-items:flex-start;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px}
+.step-num{width:34px;height:34px;display:grid;place-items:center;border-radius:50%;background:var(--terra);color:#fff;font-weight:800;flex:0 0 34px}
+.step h3{font-size:16px;margin:1px 0 4px}
+.step p{color:var(--muted);font-size:14px}
 
 /* RECEBER */
 .grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
@@ -151,7 +168,7 @@ details[open] summary:after{content:"–"}
 details p{padding-bottom:16px;color:var(--muted);font-size:15px}
 
 
-/* NOTIFICACAO DE COMPRA (prova social) */
+/* NOTIFICAÇÃO DE COMPRA (prova social) */
 .np{position:fixed;left:16px;bottom:16px;z-index:80;display:flex;align-items:center;gap:11px;
   background:#fff;border:1px solid var(--line);border-left:4px solid #22A24A;border-radius:12px;padding:11px 34px 11px 12px;
   box-shadow:0 8px 26px rgba(0,0,0,.14);max-width:290px;
@@ -177,7 +194,7 @@ footer{text-align:center;font-size:12px;color:var(--muted);padding:30px 16px 40p
 .hero .mockup{max-width:380px}
 .checkout-note{scroll-margin-top:90px}
 @media(max-width:360px){.bonus{gap:10px}.bonus-placeholder{width:80px;min-height:110px}.plan{padding:24px 16px}}
-@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}/* Navegação do carrossel no computador e no celular */
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}/* Navegação do carrossel no computador e no telemóvel */
 .amostras{cursor:grab;overscroll-behavior-x:contain;scroll-padding-inline:16px}.amostras img{scroll-snap-align:start}
 .amostras img{user-select:none;-webkit-user-drag:none}
 .amostras.dragging{cursor:grabbing;scroll-snap-type:none}
@@ -198,19 +215,44 @@ footer{text-align:center;font-size:12px;color:var(--muted);padding:30px 16px 40p
 </head>
 <body>
 <noscript><img height="1" width="1" style="display:none" alt="" src="https://www.facebook.com/tr?id=1022189670835663&amp;ev=PageView&amp;noscript=1"></noscript>
-<div class="topbar">☾ <b>Yoga Night Routine</b> <span class="data">21 noites de autocuidado</span></div>
-<!-- 1. HERO: mesma estrutura do modelo -->
+<div class="topbar">☾ <b>Yoga Night Routine</b> <span class="data">21 noites para desacelerar</span></div>
+<!-- 1. HERO -->
 <section class="hero"><div class="wrap">
-<h1>21 Noites de Autocuidado Para Desacelerar e Acolher o Seu Corpo</h1>
-<p class="lead">Yoga suave para mulheres: respiração, alongamentos e relaxamento em um ritual noturno delicado.</p>
-<img class="mockup" src="assets/capa.jpg" alt="Capa do Yoga Night Routine — 21 noites de autocuidado" width="760" height="1140" fetchpriority="high">
-<a href="#oferta" class="btn">QUERO MINHA ROTINA NOTURNA</a>
-<p class="micro">Material digital em PDF · Pratique no seu ritmo</p>
+<span class="tag">YOGA SUAVE PARA O FIM DO DIA</span>
+<h1>Desacelere ao fim do dia com 21 noites de yoga suave</h1>
+<p class="lead">Práticas simples de respiração, alongamento e relaxamento para aliviar a tensão do dia e preparar o corpo para uma noite mais tranquila.</p>
+<div class="proofline"><span>5–10 min por prática</span><span>Sem experiência necessária</span><span>Faça em casa</span></div>
+<img class="mockup" src="assets/capa.jpg" alt="Capa do Yoga Night Routine — 21 noites para desacelerar" width="760" height="1140" fetchpriority="high">
+<a href="#oferta" class="btn">QUERO COMEÇAR A MINHA ROTINA NOTURNA</a>
+<p class="micro">Material digital em PDF · Pratique ao seu ritmo · Acesso pela Hotmart</p>
 </div></section>
-<!-- 2. AMOSTRAS -->
+<!-- 2. PARA QUEM É -->
+<section class="fit"><div class="wrap">
+<h2>Esta rotina é para si?</h2>
+<p class="sub">Foi pensada para mulheres que querem criar um momento simples de pausa ao fim do dia.</p>
+<div class="fit-list">
+<div class="fit-item"><span class="fit-icon">✓</span><p>Chega ao fim do dia cansada, mas sente dificuldade em desacelerar.</p></div>
+<div class="fit-item"><span class="fit-icon">✓</span><p>Sente tensão no pescoço, ombros, costas ou pernas depois de um dia preenchido.</p></div>
+<div class="fit-item"><span class="fit-icon">✓</span><p>Quer criar um ritual noturno simples, sem aulas longas nem rotinas complicadas.</p></div>
+<div class="fit-item"><span class="fit-icon">✓</span><p>Procura práticas suaves que possa fazer em casa, mesmo sem experiência prévia em yoga.</p></div>
+</div>
+</div></section>
+
+<!-- 3. COMO FUNCIONA -->
+<section><div class="wrap">
+<h2>Como funciona</h2>
+<p class="sub">Um ritual simples para tornar o fim do dia mais leve.</p>
+<div class="steps">
+<div class="step"><span class="step-num">1</span><div><h3>Abra o material</h3><p>Aceda ao PDF no telemóvel, tablet ou computador.</p></div></div>
+<div class="step"><span class="step-num">2</span><div><h3>Escolha a prática da noite</h3><p>Siga a sequência ilustrada com respiração, alongamentos e orientações passo a passo.</p></div></div>
+<div class="step"><span class="step-num">3</span><div><h3>Reserve 5 a 10 minutos</h3><p>Faça ao seu ritmo e transforme esse momento numa pausa só sua antes de descansar.</p></div></div>
+</div>
+</div></section>
+
+<!-- 4. AMOSTRAS -->
 <section style="background:var(--card)"><div class="wrap">
-<h2>O que você vai receber</h2>
-<p class="sub">Um guia ilustrado com 21 cards de práticas suaves. Abra o material, escolha sua prática e reserve um momento para você.</p>
+<h2>Veja como é o material</h2>
+<p class="sub">Um guia ilustrado com 21 práticas suaves para acompanhar a sua rotina noturna.</p>
 <div id="amostrasArea">
 <div class="amostras" id="amostras" aria-label="Amostras do material" tabindex="0">
 <img src="assets/amostra-01.jpg" alt="Página ilustrada do Yoga Night Routine — amostra 1" width="840" height="1187" loading="lazy">
@@ -224,75 +266,87 @@ footer{text-align:center;font-size:12px;color:var(--muted);padding:30px 16px 40p
 <img src="assets/amostra-09.jpg" alt="Página ilustrada do Yoga Night Routine — amostra 9" width="840" height="1187" loading="lazy">
 <img src="assets/amostra-10.jpg" alt="Página ilustrada do Yoga Night Routine — amostra 10" width="840" height="1187" loading="lazy">
 </div>
-<div class="carousel-controls" aria-label="Navegação das amostras"><button class="carousel-arrow" id="amostraAnterior" type="button" aria-label="Amostra anterior" aria-controls="amostras">←</button><div class="dots" id="dots" aria-label="Escolher uma amostra"></div><button class="carousel-arrow" id="amostraProxima" type="button" aria-label="Próxima amostra" aria-controls="amostras">→</button></div>
+<div class="carousel-controls" aria-label="Navegação das amostras"><button class="carousel-arrow" id="amostraAnterior" type="button" aria-label="Amostra anterior" aria-controls="amostras">←</button><div class="dots" id="dots" aria-label="Escolher uma amostra"></div><button class="carousel-arrow" id="amostraProxima" type="button" aria-label="Amostra seguinte" aria-controls="amostras">→</button></div>
 <button class="carousel-pause" id="amostraPausa" type="button" aria-controls="amostras" aria-pressed="false">Pausar passagem automática</button>
 <p class="swipe">Arraste ou use as setas para ver as amostras</p>
 </div>
-<div class="total" style="margin-top:14px">Orientações ilustradas, passo a passo, cuidados e adaptações para acompanhar sua prática.</div>
+<div class="total" style="margin-top:14px">21 noites guiadas com orientações visuais, respiração, alongamentos, cuidados e adaptações para acompanhar a sua prática.</div>
 </div></section>
-<!-- 3. BONUS: incluídos somente no kit completo -->
+<!-- 5. O QUE VAI RECEBER -->
 <section><div class="wrap">
-<h2 class="bhead">E não para por aí...<span>O kit completo inclui 3 bônus especiais</span></h2>
-<p class="sub">Complete seu ritual com movimento pela manhã, leituras para relaxar e um espaço para acompanhar sua jornada de autocuidado.</p>
-<div class="bonus"><img src="assets/bonus-yoga-manha.jpg" alt="Capa do bônus Yoga da Manhã para Mulheres" width="500" height="750" loading="lazy"><div><small>BÔNUS 1 · INCLUÍDO NO KIT</small><h3>Yoga da Manhã para Mulheres</h3><p>7 sequências curtas, de 5 a 10 minutos, com movimentos, respiração e alongamentos para despertar o corpo.</p></div></div>
-<div class="bonus"><img src="assets/bonus-savasana.jpg" alt="Capa do bônus 30 Roteiros para Savasana" width="500" height="707" loading="lazy"><div><small>BÔNUS 2 · INCLUÍDO NO KIT</small><h3>30 Roteiros para Savasana</h3><p>Leituras suaves e meditações guiadas por escrito, com temas de respiração, gratidão, alívio de tensão e encerramento.</p></div></div>
-<div class="bonus"><img src="assets/bonus-diario.jpg" alt="Capa do bônus Diário de Evolução e Autopercepção" width="500" height="707" loading="lazy"><div><small>BÔNUS 3 · INCLUÍDO NO KIT</small><h3>Diário de Evolução &amp; Autopercepção</h3><p>Reflexões diárias, acompanhamento semanal e feedback pessoal para observar seu corpo, suas emoções e sua rotina.</p></div></div>
-<p class="stack">Yoga Night Routine + os 3 bônus · <span style="color:var(--terra)">4 materiais digitais no kit completo</span></p>
+<h2>O que vai receber</h2>
+<p class="sub">Tudo foi pensado para tornar a prática simples, clara e fácil de encaixar na sua rotina.</p>
+<div class="steps">
+<div class="step"><span class="step-num">✓</span><div><h3>21 práticas ilustradas</h3><p>Uma sequência para cada noite, com instruções visuais e orientações fáceis de acompanhar.</p></div></div>
+<div class="step"><span class="step-num">✓</span><div><h3>Respiração, alongamento e relaxamento</h3><p>Práticas suaves para ajudar a libertar a tensão acumulada ao longo do dia.</p></div></div>
+<div class="step"><span class="step-num">✓</span><div><h3>Cuidados e adaptações</h3><p>Indicações para ajustar cada prática ao seu conforto e respeitar os limites do seu corpo.</p></div></div>
+</div>
+</div></section>
+
+<!-- 6. BÓNUS: incluídos apenas no kit completo -->
+<section><div class="wrap">
+<h2 class="bhead">E ainda há mais<span>O kit completo inclui 3 bónus especiais</span></h2>
+<p class="sub">Complete a sua rotina com movimento de manhã, leituras para relaxar e um espaço para acompanhar a sua evolução.</p>
+<div class="bonus"><img src="assets/bonus-yoga-manha.jpg" alt="Capa do bónus Yoga da Manhã para Mulheres" width="500" height="750" loading="lazy"><div><small>BÓNUS 1 · INCLUÍDO NO KIT</small><h3>Yoga da Manhã para Mulheres</h3><p>7 sequências curtas, de 5 a 10 minutos, com movimentos, respiração e alongamentos para despertar o corpo.</p></div></div>
+<div class="bonus"><img src="assets/bonus-savasana.jpg" alt="Capa do bónus 30 Roteiros para Savasana" width="500" height="707" loading="lazy"><div><small>BÓNUS 2 · INCLUÍDO NO KIT</small><h3>30 Roteiros para Savasana</h3><p>Leituras suaves e meditações guiadas por escrito, com temas de respiração, gratidão, alívio de tensão e encerramento.</p></div></div>
+<div class="bonus"><img src="assets/bonus-diario.jpg" alt="Capa do bónus Diário de Evolução e Autoperceção" width="500" height="707" loading="lazy"><div><small>BÓNUS 3 · INCLUÍDO NO KIT</small><h3>Diário de Evolução &amp; Autoperceção</h3><p>Reflexões diárias, acompanhamento semanal e notas pessoais para observar o corpo, as emoções e a sua rotina.</p></div></div>
+<p class="stack">Yoga Night Routine + os 3 bónus · <span style="color:var(--terra)">4 materiais digitais no kit completo</span></p>
 </div></section>
 <!-- 4. PROVA SOCIAL: ativar somente com depoimentos deste produto -->
-<section id="depoimentos" style="background:var(--card)" hidden><div class="wrap"><h2>Quem já está usando</h2><p class="sub">Experiências com o Yoga Night Routine</p><div class="prints" id="prints"></div><div class="dots" id="dotsPrints"></div></div></section>
+<section id="depoimentos" style="background:var(--card)" hidden><div class="wrap"><h2>O que dizem sobre a experiência</h2><p class="sub">Depoimentos reais de quem já utiliza o Yoga Night Routine.</p><div class="prints" id="prints"></div><div class="dots" id="dotsPrints"></div></div></section>
 <!-- 5. OFERTA -->
 <section id="oferta" class="offer"><div class="wrap-lg">
-<span class="pill">☾ SEU MOMENTO DE AUTOCUIDADO</span>
-<h2>Escolha a opção ideal para você</h2>
+<span class="pill">☾ O SEU MOMENTO PARA DESACELERAR</span>
+<h2>Escolha a opção que melhor se adapta à sua rotina</h2>
 <div class="plans">
-<div class="plan"><h3>Yoga Night Routine</h3><p class="pdesc">Somente o produto principal para começar seu ritual noturno com suavidade.</p>
-<p class="recebe">Você recebe:</p><ul><li>Guia digital em PDF</li><li>21 cards de práticas ilustradas</li><li>Respiração, alongamentos e relaxamento</li><li>Passo a passo, cuidados e adaptações</li><li>Encerramento da jornada de autocuidado</li></ul>
-<p class="por">por apenas:</p><p class="price" id="precoPrincipal">€ 6,90</p><p class="acesso">Produto único · Não inclui os bônus</p>
+<div class="plan"><h3>Yoga Night Routine</h3><p class="pdesc">O produto principal para começar uma rotina noturna simples e suave.</p>
+<p class="recebe">Vai receber:</p><ul><li>Guia digital em PDF</li><li>21 práticas ilustradas para o fim do dia</li><li>Respiração, alongamentos e relaxamento</li><li>Orientações passo a passo, cuidados e adaptações</li><li>Indicação de como continuar depois das 21 noites</li></ul>
+<p class="por">por apenas:</p><p class="price" id="precoPrincipal">€ 6,90</p><p class="acesso">Produto único · Não inclui os bónus</p>
 <a href="https://pay.hotmart.com/Y107873247Q?off=92em8onr" class="btn outline" id="btnBasico" data-checkout="principal">QUERO O YOGA NIGHT ROUTINE</a>
 </div>
-<div class="plan top"><span class="badge">✧ KIT COMPLETO</span><h3>Kit de Yoga e Autocuidado Feminino</h3><span class="kit">Yoga Night Routine + 3 bônus</span>
-<img class="plan-cover" src="assets/kit-completo.jpg" alt="Kit de Yoga e Autocuidado Feminino com Yoga Night Routine e os três bônus" width="1200" height="900" loading="lazy">
-<p class="pdesc">Quatro materiais para cuidar de você: da prática suave pela manhã ao seu ritual de descanso à noite.</p><p class="recebe">Você recebe:</p><ul><li>Yoga Night Routine — 21 noites de autocuidado</li><li>Yoga da Manhã para Mulheres</li><li>30 Roteiros para Savasana</li><li>Diário de Evolução &amp; Autopercepção</li><li>Os 4 materiais em PDF</li></ul>
-<p class="por">por apenas:</p><p class="price" id="precoCompleto">€ 14,90</p><p class="acesso">Produto principal + os 3 bônus incluídos</p><a href="https://pay.hotmart.com/O107873298U?off=l2ak1vr8" class="btn grad" data-checkout="completo">QUERO O KIT COMPLETO</a></div>
-</div><p class="micro checkout-note" id="checkout-status" role="status">Você será direcionada ao checkout da Hotmart para concluir sua compra.</p>
+<div class="plan top"><span class="badge">✧ KIT COMPLETO</span><h3>Kit de Yoga e Autocuidado Feminino</h3><span class="kit">Yoga Night Routine + 3 bónus</span>
+<img class="plan-cover" src="assets/kit-completo.jpg" alt="Kit de Yoga e Autocuidado Feminino com Yoga Night Routine e os três bónus" width="1200" height="900" loading="lazy">
+<p class="pdesc">Quatro materiais para cuidar de si, desde o início do dia até ao momento de desacelerar à noite.</p><p class="recebe">Vai receber:</p><ul><li>Yoga Night Routine — 21 noites para desacelerar</li><li>Yoga da Manhã para Mulheres</li><li>30 Roteiros para Savasana</li><li>Diário de Evolução &amp; Autoperceção</li><li>Os 4 materiais em PDF</li></ul>
+<p class="por">por apenas:</p><p class="price" id="precoCompleto">€ 14,90</p><p class="acesso">Produto principal + os 3 bónus incluídos</p><a href="https://pay.hotmart.com/O107873298U?off=l2ak1vr8" class="btn grad" data-checkout="completo">QUERO O KIT COMPLETO</a></div>
+</div><p class="micro checkout-note" id="checkout-status" role="status">Será encaminhada para o checkout da Hotmart para concluir a compra.</p>
 </div></section>
 <!-- 6. GARANTIA: confirmar condições no checkout antes da publicação -->
 <section style="padding-top:0"><div class="wrap"><div class="guar">
-<svg viewBox="0 0 100 112" role="img" aria-label="Compra pela Hotmart"><path d="M50 4 90 18v34c0 27-17 46-40 56C27 98 10 79 10 52V18Z" fill="var(--sage)"></path><path d="M50 12 82 23v29c0 22-13 38-32 47C31 90 18 74 18 52V23Z" fill="none" stroke="var(--gold)" stroke-width="2"></path><path d="m32 54 12 12 25-27" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"></path></svg>
-<h2>Compra pela Hotmart</h2><p style="color:var(--muted)">O pagamento será realizado no checkout da Hotmart. Antes de concluir, você poderá consultar o valor, as formas de pagamento e as condições de garantia da oferta.</p>
+<svg viewBox="0 0 100 112" role="img" aria-label="Compra através da Hotmart"><path d="M50 4 90 18v34c0 27-17 46-40 56C27 98 10 79 10 52V18Z" fill="var(--sage)"></path><path d="M50 12 82 23v29c0 22-13 38-32 47C31 90 18 74 18 52V23Z" fill="none" stroke="var(--gold)" stroke-width="2"></path><path d="m32 54 12 12 25-27" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+<h2>Compra através da Hotmart</h2><p style="color:var(--muted)">O pagamento é realizado no checkout da Hotmart. Antes de concluir, poderá consultar o valor, as formas de pagamento e as condições de garantia da oferta.</p>
 </div></div></section>
 <!-- 7. FAQ -->
-<section style="background:var(--card)"><div class="wrap"><h2>Dúvidas frequentes</h2><p class="sub">Para começar com tranquilidade.</p>
-<details><summary>Como vou receber o material?</summary><p>Após a confirmação do pagamento, siga as instruções de acesso enviadas pela Hotmart ao e-mail informado na compra.</p></details>
+<section style="background:var(--card)"><div class="wrap"><h2>Dúvidas frequentes</h2><p class="sub">Tudo o que precisa de saber antes de começar.</p>
+<details><summary>Como vou receber o material?</summary><p>Depois da confirmação do pagamento, siga as instruções de acesso enviadas pela Hotmart para o e-mail utilizado na compra.</p></details>
 <details><summary>O produto é um PDF ou um curso em vídeo?</summary><p>É um guia digital em PDF, com práticas ilustradas e orientações por escrito. Esta oferta não inclui aulas em vídeo.</p></details>
-<details><summary>Preciso ter experiência com yoga?</summary><p>O material apresenta práticas suaves, com passo a passo, cuidados e adaptações. Respeite seu conforto e os limites do seu corpo em cada prática.</p></details>
-<details><summary>Como usar as 21 noites de autocuidado?</summary><p>Use os cards para acompanhar sua jornada noturna. Ao concluir, você pode repetir a jornada ou escolher de 3 a 5 cards para uma rotina curta, conforme a orientação de encerramento do material.</p></details>
-<details><summary>Posso abrir no celular?</summary><p>Sim. O PDF pode ser aberto em um celular, tablet ou computador que tenha um leitor de PDF.</p></details>
-<details><summary>Qual é a diferença entre as duas opções?</summary><p>Por € 6,90, você recebe somente o Yoga Night Routine. O kit completo de € 14,90 inclui o Yoga Night Routine e os três bônus: Yoga da Manhã para Mulheres, 30 Roteiros para Savasana e Diário de Evolução &amp; Autopercepção.</p></details>
-<details><summary>O kit do pop-up é o mesmo kit completo?</summary><p>Sim. Ao escolher o produto único, o pop-up oferece o mesmo kit completo por € 9,90, com € 5,00 de desconto sobre o preço de € 14,90. Você pode aceitar a oferta ou continuar somente com o Yoga Night Routine por € 6,90.</p></details>
-<details><summary>Quais são as condições de garantia?</summary><p>O prazo e as condições de garantia estarão informados na oferta e no checkout da Hotmart antes da compra.</p></details>
+<details><summary>Preciso de ter experiência em yoga?</summary><p>Não. O material apresenta práticas suaves, com orientações passo a passo, cuidados e adaptações. Respeite sempre o seu conforto e os limites do seu corpo.</p></details>
+<details><summary>Quanto tempo demora cada prática?</summary><p>A maioria das práticas foi pensada para caber numa rotina curta ao fim do dia. Pode reservar cerca de 5 a 10 minutos e ajustar ao seu ritmo.</p></details>
+<details><summary>Como usar as 21 noites?</summary><p>Siga os cards ao longo da sua rotina noturna. Depois de concluir as 21 noites, pode repetir a sequência ou escolher algumas práticas para criar uma rotina curta personalizada.</p></details>
+<details><summary>Posso abrir no telemóvel?</summary><p>Sim. Pode abrir o PDF no telemóvel, tablet ou computador, desde que tenha uma aplicação capaz de ler ficheiros PDF.</p></details>
+<details><summary>Qual é a diferença entre as duas opções?</summary><p>Por € 6,90, recebe apenas o Yoga Night Routine. O kit completo de € 14,90 inclui o Yoga Night Routine e os três bónus: Yoga da Manhã para Mulheres, 30 Roteiros para Savasana e Diário de Evolução &amp; Autoperceção.</p></details>
+<details><summary>O kit apresentado no pop-up é o mesmo kit completo?</summary><p>Sim. Ao escolher o produto principal, poderá aproveitar uma oferta especial do mesmo kit completo por € 9,90. Pode aceitar a oferta ou continuar apenas com o Yoga Night Routine por € 6,90.</p></details>
+<details><summary>Quais são as condições de garantia?</summary><p>O prazo e as condições de garantia são apresentados na oferta e no checkout da Hotmart antes de concluir a compra.</p></details>
 </div></section>
-<footer>© <span id="ano">2026</span> · Yoga Night Routine · Todos os direitos reservados.<br>Pagamento pela Hotmart.</footer>
+<footer>© <span id="ano">2026</span> · Yoga Night Routine · Todos os direitos reservados.<br>Pagamento através da Hotmart.</footer>
 <!-- Oferta do kit completo ao escolher o material principal -->
 <div class="pop" id="pop" role="dialog" aria-modal="true" aria-labelledby="popT" aria-describedby="popDesc" hidden>
   <div class="pbox" tabindex="-1">
     <button class="pclose" id="popX" aria-label="Fechar oferta">×</button>
     <span class="ptag">OFERTA ESPECIAL</span>
-    <h3 id="popT">Leve o <em>Kit Completo</em> por <span data-price="popup">€ 9,90</span></h3>
-    <p class="ptxt" id="popDesc">Você escolheu o Yoga Night Routine por <span data-price="principal">€ 6,90</span>. Por apenas € 3,00 a mais, leve o kit completo com os três bônus.</p>
+    <h3 id="popT">Antes de continuar: quer levar o <em>Kit Completo</em> por apenas mais € 3?</h3>
+    <p class="ptxt" id="popDesc">Escolheu o Yoga Night Routine por <span data-price="principal">€ 6,90</span>. Pode levar o kit completo, com os três bónus, por <span data-price="popup">€ 9,90</span>.</p>
     <img class="popup-cover" src="assets/kit-completo.jpg" alt="Capa do Kit de Yoga e Autocuidado Feminino completo" width="1200" height="900" loading="lazy">
     <div class="pinc">
-      <ul><li>Yoga Night Routine</li><li>Yoga da Manhã para Mulheres</li><li>30 Roteiros para Savasana</li><li>Diário de Evolução &amp; Autopercepção</li></ul>
+      <ul><li>Yoga Night Routine</li><li>Yoga da Manhã para Mulheres</li><li>30 Roteiros para Savasana</li><li>Diário de Evolução &amp; Autoperceção</li></ul>
       <hr>
-      <p class="pold">De <span data-price="completo">€ 14,90</span></p>
+      <p class="pold">Preço habitual: <span data-price="completo">€ 14,90</span></p>
       <p class="pnew" data-price="popup">€ 9,90</p>
-      <p class="peco">Você economiza € 5,00 no mesmo kit completo</p>
+      <p class="peco">Oferta especial: poupa € 5,00 no kit completo</p>
     </div>
     <a href="https://pay.hotmart.com/O107873298U?off=4864zxnv" class="btn gold" data-checkout="popup">SIM, QUERO O KIT POR <span data-price="popup">€ 9,90</span></a>
-    <a href="https://pay.hotmart.com/Y107873247Q?off=92em8onr" class="pno" data-checkout="principal">Continuar com o material principal por <span data-price="principal">€ 6,90</span></a>
+    <a href="https://pay.hotmart.com/Y107873247Q?off=92em8onr" class="pno" data-checkout="principal">Continuar apenas com o produto principal por <span data-price="principal">€ 6,90</span></a>
   </div>
 </div>
-<script src="site-config.js?v=20261003-6"></script>
-<script src="site.js?v=20261003-5"></script>
+<script src="site-config.js?v=20261005-ptpt"></script>
+<script src="site.js?v=20261005-ptpt"></script>
 </body></html>
