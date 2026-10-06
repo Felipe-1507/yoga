@@ -1,4 +1,4 @@
-// Use um link Hotmart próprio para cada oferta, com o preço correspondente.
+// Utilize um link Hotmart próprio para cada oferta, com o respetivo preço.
 window.YOGA_CONFIG = {
   checkoutPrincipal: 'https://pay.hotmart.com/Y107873247Q?off=92em8onr',
   checkoutCompleto: 'https://pay.hotmart.com/O107873298U?off=l2ak1vr8',
