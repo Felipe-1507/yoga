@@ -147,6 +147,30 @@
     document.body.style.overflow = previousOverflow;
     trigger.focus();
   }
+  // Mantém a atribuição da campanha ao passar da landing page para a Hotmart.
+  // Não cria UTMs artificiais: apenas transmite os parâmetros realmente recebidos.
+  var trackingKeys = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term', 'utm_id', 'fbclid'];
+  var tracking = {};
+  try {
+    var saved = JSON.parse(sessionStorage.getItem('yoga_campaign_tracking') || '{}');
+    trackingKeys.forEach(function (key) {
+      if (typeof saved[key] === 'string' && saved[key]) tracking[key] = saved[key];
+    });
+  } catch (error) { /* A navegação continua normalmente sem armazenamento. */ }
+  var incoming = new URLSearchParams(window.location.search);
+  trackingKeys.forEach(function (key) {
+    var value = incoming.get(key);
+    if (value) tracking[key] = value.slice(0, 500);
+  });
+  try { sessionStorage.setItem('yoga_campaign_tracking', JSON.stringify(tracking)); }
+  catch (error) { /* O rastreamento funciona também sem sessionStorage. */ }
+  function checkoutWithTracking(link) {
+    var url = new URL(link);
+    trackingKeys.forEach(function (key) {
+      if (tracking[key] && !url.searchParams.has(key)) url.searchParams.set(key, tracking[key]);
+    });
+    return url.href;
+  }
   Object.keys(offers).forEach(function (key) {
     var offer = offers[key];
     if (offer.price) {
@@ -156,7 +180,7 @@
     var checkout;
     try {
       var url = new URL(offer.link);
-      if (url.protocol === 'https:' && (url.hostname === 'hotmart.com' || url.hostname.endsWith('.hotmart.com'))) checkout = url.href;
+      if (url.protocol === 'https:' && (url.hostname === 'hotmart.com' || url.hostname.endsWith('.hotmart.com'))) checkout = checkoutWithTracking(url.href);
     } catch (error) { /* A oferta aguarda um link de pagamento válido. */ }
     document.querySelectorAll('[data-checkout="' + key + '"]').forEach(function (button) {
       if (checkout) button.href = checkout;
